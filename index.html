@@ -18,68 +18,105 @@
 
   <body>
     <div class="container-fluid">
-      <nav class="navbar">
-        <div class="containernavbar-fluid">
-          <a class="navbar-brand" href="#">
-            <img
-              src="/docs/5.3/assets/brand/bootstrap-logo.svg"
-              alt="Logo"
-              width="30"
-              height="24"
-              class="d-inline-block align-text-top"
-            />
-            Bootstrap
-          </a>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand text-success ms-5" href="#"
+            ><h1>PizzaNature</h1></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          ></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-light"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Compromiso</a></li>
+                  <li><a class="dropdown-item" href="#">Contacto</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#"></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
 
       <div class="row mt-5"></div>
       <div class="row mt-5"></div>
-      <div class="row mt-5"></div>
-      <div class="row mt-5"></div>
 
-      
-
-      <div class="containercentral">
-        <div class="row justify-content-center">
-          <div class="" style="width: 18rem">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
+      <div class="containercentral justify-content-center">
+        <div class="col-4 mt-5 ms-3">
+          <div class="col-4" style="width: 18rem">
+            <div class="card-body ms-5">
+              <h5 class="card-title text-light">CARTA</h5>
+              <p class="card-text text-light">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <button type="button" class="btn btn-outline-success">Success</button>
+              <button type="button" class="btn btn-outline-info">
+                ECHA UN OJO!
+              </button>
             </div>
           </div>
 
-          <div class="" style="width: 18rem">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
+          <div class="col-4 mt-5" style="width: 18rem">
+            <div class="card-body ms-5">
+              <h5 class="ms-auto card-title text-light">RESERVAS</h5>
+              <p class="card-text text-light">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <button type="button" class="btn btn-outline-warning">Warning</button>
+              <button type="button" class="btn btn-outline-success">
+                RESERVA!
+              </button>
             </div>
           </div>
 
-          <div class="" style="width: 18rem">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
+          <div class="col-4 mt-5" style="width: 18rem">
+            <div class="card-body ms-5">
+              <h5 class="ms-auto card-title text-light">QUIENES SOMOS</h5>
+              <p class="card-text text-light">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <button type="button" class="btn btn-outline-info">Info</button>
+              <button type="button" class="btn btn-outline-warning">
+                CONOCENOS!
+              </button>
             </div>
           </div>
         </div>
       </div>
+      
     </div>
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
