@@ -2,8 +2,21 @@
     padding: 0%;
     margin: 0%;
 }
-body{
+
+/* Para la página 1 */
+body.pagina1 {
     background-image: url(/img/fondo5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
+    background-position: center center;
+    font-family: fantasy;
+  }
+  
+  /* Para la página 2 */
+  body.pagina2 {
+    background-image: url(https://us.123rf.com/450wm/benidict83/benidict831402/benidict83140200013/26162734-dise%C3%B1o-tiza-tablero-del-men%C3%BA.jpg?ver=6);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: fantasy;
+  }
