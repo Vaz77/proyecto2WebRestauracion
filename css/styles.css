@@ -8,13 +8,12 @@ body.pagina1 {
     background-image: url(/img/fondo5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
     font-family: fantasy;
   }
   
   /* Para la página 2 */
   body.pagina2 {
-    background-image: url(https://us.123rf.com/450wm/benidict83/benidict831402/benidict83140200013/26162734-dise%C3%B1o-tiza-tablero-del-men%C3%BA.jpg?ver=6);
+    background-image: url(https://cdn.aarp.net/content/dam/aarp/home-and-family/personal-technology/2022/03/1140-phone-screen-and-leaves-esp.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: fantasy;
