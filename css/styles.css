@@ -18,3 +18,11 @@ body.pagina1 {
     background-size: cover;
     font-family: fantasy;
   }
+
+  body.pagina3 {
+    background-image: url(/img/fondo5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: fantasy;
+    height: 100vh;
+  }
