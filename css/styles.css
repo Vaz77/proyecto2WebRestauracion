@@ -1,17 +1,15 @@
 *{
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
 }
 
-/* Para la página 1 */
 body.pagina1 {
-    background-image: url(/img/fondo5.jpg);
+    background-image: url(/img/fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: fantasy;
   }
   
-  /* Para la página 2 */
   body.pagina2 {
     background-image: url(https://i.pinimg.com/originals/70/e1/61/70e16105054d9c673b1e547077cb14b8.jpg);
     background-repeat: no-repeat;
