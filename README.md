@@ -34,10 +34,12 @@ BOOTSTRAP 5
 
 
 COMPONENTES UTLIZADOS Y MODIFICADOS
+
 Los componentes principales utilizados y modificados son:
 
 Contenedores principales subdivididos en rows y a su vez en columnas modificados para su correcta adaptación responsive.
 Navbar propio de bootstrap modificado acorde al restaurante.
+Navbar inferior, pensada para la usabilidad a la hora de utilzar el smartphone.
 Cards propias de bootstrap para los platos modificados para contener una imagen y texto.
 
 
