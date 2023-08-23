@@ -47,6 +47,10 @@ body.pagina3 {
   height: 100vh;
 }
 
+.formSugerencias {
+  margin-top: 10em;
+}
+
 body.pagina4 {
   background-image: url(../img/restaurante.jpg);
   background-repeat: no-repeat;
