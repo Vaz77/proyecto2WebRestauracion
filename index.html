@@ -15,41 +15,93 @@
     <link rel="stylesheet" href="./css/styles.css">
   </head>
 
-  <body class="pagina1 center">
+  <body class="pagina1 center body-bg">
     <nav class="navbar navbar-dark bg-dark">
       <div class="container-fluid">
-        <img src="https://media-cdn.tripadvisor.com/media/photo-s/25/68/e9/5c/gastrobar.jpg" alt="Logo" width="60" height="60" class="d-inline-block align-text-top rounded-circle ms-2">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <a href="/index.html">
+          <img
+            src="https://media-cdn.tripadvisor.com/media/photo-s/25/68/e9/5c/gastrobar.jpg"
+            alt="Logo"
+            width="60"
+            height="60"
+            class="d-inline-block align-text-top rounded-circle ms-2"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="">Menú</span>
         </button>
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
           <div class="offcanvas-header">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/25/68/e9/5c/gastrobar.jpg" alt="Logo" width="80" height="80" class="d-inline-block align-text-top rounded-circle ms-2">
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <img
+              src="https://media-cdn.tripadvisor.com/media/photo-s/25/68/e9/5c/gastrobar.jpg"
+              alt="Logo"
+              width="80"
+              height="80"
+              class="d-inline-block align-text-top rounded-circle ms-2"
+            />
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/quienessomos.html">Conocenos un poco mejor</a>
+                <a class="nav-link" href="../pages/quienessomos.html"
+                  >Conocenos un poco mejor</a
+                >
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Carta
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="#">Nuestros platos</a></li>
-                  <li><a class="dropdown-item" href="#">Cervezas</a></li>
-                  <li><a class="dropdown-item" href="#">Vinos</a></li>
-                  <li><a class="dropdown-item" href="#">Cocteles</a></li>
-                  <li><a class="dropdown-item" href="#">Postres</a></li>
                   <li>
-                    <hr class="dropdown-divider">
+                    <a class="dropdown-item" href="./pages/carta.html">Nuestros platos</a>
                   </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/postres.html">Postres</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="./pages/cervezas.html">Cervezas</a></li>
+                  <li><a class="dropdown-item" href="./pages/vinos.html">Vinos</a></li>
+                  <li><a class="dropdown-item" href="#">Cocteles</a></li>
                 </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/reservas.html"
+                  >Reserva tu mesa</a
+                >
               </li>
             </ul>
           </div>
@@ -95,7 +147,7 @@
         <img src="https://media-cdn.tripadvisor.com/media/photo-s/25/68/e9/5c/gastrobar.jpg" alt="Logo" width="80" height="80" class="logo-image fade-in">
         <p class="logo-text fade-in">Cocina de mercado</p>
       </div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+    <nav class="navbar footer navbar-expand-lg navbar-dark bg-dark fixed-bottom">
       <div class="container">
         <div class="navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav">
