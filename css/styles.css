@@ -101,10 +101,15 @@ body.pagina6 {
   max-height: 100%;
   object-fit: cover;
 }
-.imgCompromiso, .img-fluid {
+.imgCompromiso {
   height: 60%;
   width: 80%;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+.img-fluid {
+  height: 50%;
+  width: 70%;
 }
 
 .textSomos {
@@ -184,6 +189,117 @@ body.pagina6 {
 .btn-submit:hover {
   background-color: #d6c691;
 }
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #33333352;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: 0px 4px 6px rgb(255, 255, 255);
+  color: white;
+  max-width: 35em;
+  margin-top: 3em;
+}
+
+.cardPrincipales {
+  background-color: #33333352;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: 0px 4px 6px rgb(255, 255, 255);
+  transition: transform 0.3s ease-in-out;
+  color: white;
+  max-width: 35em;
+  margin-top: 3em;
+}
+
+.cardPostres{
+  background-color: #33333352;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: 0px 4px 6px rgb(255, 255, 255);
+  transition: transform 0.3s ease-in-out;
+  color: white;
+  max-width: 35em;
+  margin-top: 3em;
+}
+.dish {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.dish-name {
+  flex: 2;
+  font-weight: bold;
+}
+
+.dish-price {
+  flex: 1;
+  text-align: right;
+  color: #f39c12;
+  font-weight: bold;
+}
+
+.text-center{
+  color: #ffedcf;
+  margin-top: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.carrito-container {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  color: white;
+}
+
+.plato-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.plato-nombre {
+  flex: 2;
+}
+
+.plato-precio {
+  flex: 1;
+  text-align: right;
+}
+
+.plato-cantidad {
+  flex: 1;
+  text-align: center;
+}
+
+.imgCarrito{
+  width: 3em;
+  height: 3em;
+  cursor: pointer;
+}
+
+.carrito-count {
+  color: red;
+  font-weight: bold;
+}
+
 
 @media (max-width: 576px) {
   .logo-image {
