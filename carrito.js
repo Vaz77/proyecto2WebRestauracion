@@ -71,13 +71,24 @@ function mostrarCarrito() {
   });
 }
 // Agregar eventos de clic a los botones "Agregar al carrito"
-const botonesAgregar = document.querySelectorAll(".btn-agregar");
-botonesAgregar.forEach((boton) => {
-  boton.addEventListener("click", () => {
-    const nombre = boton.dataset.nombre;
-    const precio = parseFloat(boton.dataset.precio);
+// Agregar eventos de clic a las imágenes "Agregar al carrito"
+const imagenesAgregar = document.querySelectorAll(".btn-icon.btn-agregar");
+imagenesAgregar.forEach((imagen) => {
+  imagen.addEventListener("click", () => {
+    const nombre = imagen.dataset.nombre;
+    const precio = parseFloat(imagen.dataset.precio);
     agregarAlCarrito(nombre, precio);
   });
 });
+
+// Agregar eventos de clic a las imágenes "Quitar del carrito"
+const imagenesQuitar = document.querySelectorAll(".btn-icon.btn-quitar");
+imagenesQuitar.forEach((imagen) => {
+  imagen.addEventListener("click", () => {
+    const nombre = imagen.dataset.nombre;
+    quitarDelCarrito(nombre);
+  });
+});
+
 // Llamada inicial para mostrar el carrito vacío
 mostrarCarrito();

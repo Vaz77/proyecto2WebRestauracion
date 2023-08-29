@@ -220,7 +220,7 @@ body.pagina6 {
   margin-top: 3em;
 }
 
-.cardPostres{
+.cardPostres {
   background-color: #33333352;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -252,13 +252,11 @@ body.pagina6 {
   font-weight: bold;
 }
 
-.text-center{
+.text-center {
   color: #ffedcf;
   margin-top: 1em;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-
 
 .carrito-container {
   margin-top: 20px;
@@ -289,7 +287,7 @@ body.pagina6 {
   text-align: center;
 }
 
-.imgCarrito{
+.imgCarrito {
   width: 3em;
   height: 3em;
   cursor: pointer;
@@ -300,6 +298,17 @@ body.pagina6 {
   font-weight: bold;
 }
 
+.agregarBoton {
+  width: 1.6em;
+  cursor: pointer;
+  margin-left: 1em;
+}
+
+.eliminarBoton {
+  width: 1.5em;
+  cursor: pointer;
+  margin-left: 0.5em;
+}
 
 @media (max-width: 576px) {
   .logo-image {
