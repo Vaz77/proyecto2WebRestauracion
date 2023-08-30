@@ -104,7 +104,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/reservas.html"
+                <a class="nav-link" href="../pages/reservas.html"
                   >Reserva tu mesa</a
                 >
               </li>
@@ -126,18 +126,21 @@
           <span id="carrito-count" class="carrito-count">0</span>
         </div>        
         <div class="modal fade" id="carrito-modal" tabindex="-1" aria-labelledby="carrito-modal-label" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="carrito-modal-label">Carrito de Compras</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title" id="carrito-modal-label">Platos para pedir</h5>
+                <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <ul class="list-group">
                 </ul>
               </div>
-              <div class="carrito-container">
-                <p>Total platos en el carrito: <span id="carrito-modal-count">0</span></p>
+              <div class="modal-footer">
+                <div class="carrito-container">
+                  <p class="modal-total-text">Total de platos en el carrito: <span id="carrito-modal-count">0</span></p>
+                  <p class="total-carrito-modal" id="total-carrito">Total: 0.00 €</p>
+                </div>
               </div>
             </div>
           </div>

@@ -16,6 +16,7 @@ function agregarAlCarrito(nombre, precio) {
   }
   // Actualizar la interfaz de usuario
   mostrarCarrito();
+  mostrarTotal();
 }
 // Función para quitar un plato del carrito
 function quitarDelCarrito(nombre) {
@@ -29,6 +30,7 @@ function quitarDelCarrito(nombre) {
       }
     }
     mostrarCarrito();
+    mostrarTotal();
   }
 }
 // Función para mostrar el contenido del carrito en la página
@@ -39,7 +41,6 @@ function mostrarCarrito() {
   const carritoCount = document.getElementById("carrito-count");
   const carritoModalCount = document.getElementById("carrito-modal-count");
   carritoContainer.innerHTML = "";
-
   carritoCount.textContent = carrito.reduce(
     (total, item) => total + item.cantidad,
     0
@@ -70,7 +71,6 @@ function mostrarCarrito() {
     });
   });
 }
-// Agregar eventos de clic a los botones "Agregar al carrito"
 // Agregar eventos de clic a las imágenes "Agregar al carrito"
 const imagenesAgregar = document.querySelectorAll(".btn-icon.btn-agregar");
 imagenesAgregar.forEach((imagen) => {
@@ -80,7 +80,6 @@ imagenesAgregar.forEach((imagen) => {
     agregarAlCarrito(nombre, precio);
   });
 });
-
 // Agregar eventos de clic a las imágenes "Quitar del carrito"
 const imagenesQuitar = document.querySelectorAll(".btn-icon.btn-quitar");
 imagenesQuitar.forEach((imagen) => {
@@ -89,6 +88,14 @@ imagenesQuitar.forEach((imagen) => {
     quitarDelCarrito(nombre);
   });
 });
-
-// Llamada inicial para mostrar el carrito vacío
+// Función para calcular y mostrar el total de los platos en el carrito
+function mostrarTotal() {
+  const totalCarritoModal = document.querySelector(".total-carrito-modal");
+  const total = carrito.reduce(
+    (total, item) => total + item.precio * item.cantidad,
+    0
+  );
+  totalCarritoModal.textContent = `Total: ${total.toFixed(2)} €`;
+}
+// Llamada a la función inicial para mostrar el carrito vacío
 mostrarCarrito();
