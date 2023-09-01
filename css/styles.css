@@ -298,6 +298,10 @@ body.pagina6 {
   font-weight: bold;
 }
 
+.copa{
+  color: rgb(5, 146, 162);
+}
+
 .agregarBoton {
   width: 1.6em;
   cursor: pointer;
@@ -452,6 +456,14 @@ body.pagina6 {
   margin-top: 10px;
   text-align: center;
   display: none;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.close-white {
+  filter: invert(100%);
 }
 
 @media (max-width: 576px) {

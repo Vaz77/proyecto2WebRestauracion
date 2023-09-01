@@ -53,12 +53,17 @@ function mostrarCarrito() {
     const platoItem = document.createElement("li");
     platoItem.classList.add("list-group-item");
     platoItem.innerHTML = `
-        <span class="dish-name">${item.nombre}</span>
-        <span class="dish-precio">${item.precio} €</span>
-        <span class="dish-cantidad">${item.cantidad}</span>
-        <img class="eliminarBoton btn-icon btn-quitar" src="../img/eliminar.png" alt="Remove" data-nombre="${item.nombre}">
-        <i class="fas fa-minus"></i>
-        </img>
+    <div class="d-flex justify-content-between align-items-end">
+    <div>
+      <span class="dish-name">${item.nombre}</span>
+      <span class="dish-precio fw-bold ">${item.precio} €</span>
+      <span class="dish-cantidad align-items-end text-warning fw-bold ms-2">${item.cantidad}</span>
+    </div>
+    <div>
+      <img class="eliminarBoton btn-icon btn-quitar" src="../img/eliminar.png" alt="Remove" data-nombre="${item.nombre}">
+      <i class="fas fa-minus"></i>
+    </div>
+  </div>
       `;
     carritoContainer.appendChild(platoItem);
   });
