@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  background-attachment: fixed;
 }
 
 body.pagina1 {
@@ -428,6 +429,10 @@ body.pagina6 {
   opacity: 1;
 }
 
+  .botonMolesto{
+    display: none;
+  }
+
 @keyframes neon-border-animation {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
@@ -466,7 +471,7 @@ body.pagina6 {
   filter: invert(100%);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 990px) {
   .logo-image {
     width: 200px;
     height: 200px;
@@ -476,6 +481,12 @@ body.pagina6 {
     margin-top: 10%;
   }
 
+  .btn-submit {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: flex;
+    
+  }
   .footer-content {
     text-align: center;
   }
@@ -486,4 +497,18 @@ body.pagina6 {
   .footer {
     display: none;
   }
+
+  .list-vinos{
+    width: 21.5em;
+    font-size: 13.3px
+  }
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1.5em;
+    height: 10em;
+  }
 }
+
+
