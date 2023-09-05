@@ -494,7 +494,7 @@ body.pagina6 {
   margin: 20px auto;
   font-family: century "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
-  font-size: 1.5em;
+  font-size: 1.6em;
   color: rgb(223, 0, 164);
   font-weight: bold;
   text-shadow: 0 0 10px rgb(255, 255, 255);
@@ -510,6 +510,40 @@ body.pagina6 {
   }
 }
 
+.boton-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -50px;
+}
+
+.neon-boton {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  animation: neon 1.5s linear infinite alternate;
+  font-family: century "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  margin-top: -50px;
+}
+
+@keyframes neon {
+  0% {
+    box-shadow: 0 0 1.5px rgb(223, 0, 164), 0 0 3px rgb(223, 0, 164),
+      0 0 6px rgb(255, 255, 255), 0 0 12px rgb(223, 0, 164);
+  }
+  100% {
+    box-shadow: 0 0 1.5px rgb(34, 0, 255), 0 0 3px rgb(34, 0, 255),
+      0 0 6px rgb(255, 255, 255), 0 0 12px rgb(34, 0, 255);
+  }
+}
+
 @media (max-width: 990px) {
   .logo-image {
     width: 200px;
@@ -518,6 +552,12 @@ body.pagina6 {
 
   .logo-container {
     margin-top: 10%;
+  }
+
+  #parpadeoImg {
+    width: 200px;
+    height: 200px;
+    margin-top: 1em;
   }
 
   .btn-submit {
@@ -546,5 +586,11 @@ body.pagina6 {
     height: auto;
     margin-bottom: 1.5em;
     height: 10em;
+  }
+
+  .pausePlay {
+    width: 2em;
+    margin-left: 1em;
+    margin-top: 0.1em;
   }
 }
