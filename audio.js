@@ -3,12 +3,12 @@ const playPauseButton = document.getElementById("playPauseButton");
 let isPlaying = true;
 
 playPauseButton.addEventListener("click", function () {
-    if (isPlaying) {
+  if (isPlaying) {
     audio.pause();
     playPauseButton.src = "./img/play.png";
-    } else {
+  } else {
     audio.play();
     playPauseButton.src = "./img/pause.png";
-    }
-    isPlaying = !isPlaying;
+  }
+  isPlaying = !isPlaying;
 });

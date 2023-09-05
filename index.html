@@ -106,9 +106,7 @@
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand text-success ms-5 mt-4" href="#"
-            ></a
-          >
+          <a class="navbar-brand text-success ms-5 mt-4" href="#"></a>
           <button
             class="navbar-toggler botonMolesto"
             type="button"
@@ -139,9 +137,9 @@
           </div>
       </nav>
       <div class="logo-container">
-        <img src="https://media-cdn.tripadvisor.com/media/photo-s/25/68/e9/5c/gastrobar.jpg" alt="Logo" width="80" height="80" class="logo-image fade-in">
-        <p class="logo-text fade-in">Cocina de mercado</p>
-      </div>
+        <img id="parpadeoImg" src="https://media-cdn.tripadvisor.com/media/photo-s/25/68/e9/5c/gastrobar.jpg" alt="Imagen">
+        <p id="parpadeoTexto" class="text-mask">Cocina de Mercado</p>
+    </div>
     <nav class="navbar footer navbar-expand-lg navbar-dark bg-dark fixed-bottom">
       <div class="container">
         <div class="navbar-collapse justify-content-center" id="navbarNav">
@@ -160,10 +158,11 @@
       </div>
     </nav>
     <audio id="audio" autoplay>
-      <source src="./music/edamame.mp3" type="audio/mpeg">
+      <source src="./audio/edamame.mp3" type="audio/mpeg">
       Tu navegador no admite el elemento de audio.
     </audio>
       <img class="pausePlay" id="playPauseButton" src="./img/pause.png" alt="Reproducir">
       <script src="./audio.js"></script>
+      <script src="./textoInicio.js"></script>
       </body>
 </html>

@@ -116,14 +116,6 @@ body.pagina6 {
 .textSomos {
   background-color: rgba(255, 255, 255, 0.367);
 }
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 .form-container {
   display: flex;
@@ -474,7 +466,46 @@ body.pagina6 {
 .pausePlay {
   width: 2em;
   margin-left: 1em;
-  margin-top: -2em;
+  margin-top: 0.1em;
+}
+
+#parpadeoImg {
+  width: 300px;
+  height: 300px;
+  animation: parpadeo 3s infinite alternate, cambioTexto 3s infinite alternate;
+  border-radius: 50%;
+}
+
+@keyframes parpadeo {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.text-mask {
+  border-radius: 50%;
+  padding: 20px;
+  animation: cambioTexto 3s infinite alternate;
+  opacity: 0;
+  margin: 20px auto;
+  font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+}
+
+@keyframes cambioTexto {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 990px) {
