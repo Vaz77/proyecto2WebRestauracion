@@ -421,7 +421,7 @@ body.pagina6 {
   animation: neon 1.5s linear infinite alternate;
   font-family: century "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
-  margin-top: -50px;
+  margin-top: 30px;
 }
 
 .neon-button:hover {
@@ -486,8 +486,7 @@ body.pagina6 {
   animation: cambioTexto 2.9s infinite alternate;
   opacity: 0;
   margin: 20px auto;
-  font-family: century "Franklin Gothic Medium", "Arial Narrow", Arial,
-    sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: 1.6em;
   color: rgb(223, 0, 164);
   font-weight: bold;
@@ -512,35 +511,20 @@ body.pagina6 {
 }
 
 .neon-boton {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #00000000;
+  color: rgb(223, 0, 164);
+  text-shadow: 0 0 10px rgb(255, 255, 255);
   border: none;
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: 25px;
+  font-weight: bold;
   border-radius: 5px;
-  cursor: pointer;
   position: relative;
   overflow: hidden;
-  animation: neon 1.5s linear infinite alternate;
   font-family: century "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
-  margin-top: -50px;
-}
-
-.neon-boton:hover {
-  background-color: black;
-  color: rgb(255, 86, 210);
-}
-
-@keyframes neon {
-  0% {
-    box-shadow: 0 0 1.5px rgb(223, 0, 164), 0 0 3px rgb(223, 0, 164),
-      0 0 6px rgb(255, 255, 255), 0 0 12px rgb(223, 0, 164);
-  }
-  100% {
-    box-shadow: 0 0 1.5px rgb(34, 0, 255), 0 0 3px rgb(34, 0, 255),
-      0 0 6px rgb(255, 255, 255), 0 0 12px rgb(34, 0, 255);
-  }
+  margin-top: -60px;
+  text-decoration: none;
 }
 
 .enlacesCarta {
@@ -601,7 +585,7 @@ body.pagina6 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.89);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -625,6 +609,81 @@ body.pagina6 {
     transform: rotate(360deg);
   }
 }
+.botonCarta {
+  margin-top: 12em;
+  margin-left: 15em;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  animation: neon 1.5s linear infinite alternate;
+  font-family: century "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-shadow: 0 0 12px rgb(255, 255, 255);
+}
+.botonCocteles {
+  margin-top: -2.5em;
+  margin-left: 50em;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  animation: neon 1.5s linear infinite alternate;
+  font-family: century "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-shadow: 0 0 12px rgb(0, 0, 0);
+  text-decoration: none;
+  position: relative;
+}
+
+.botonCocteles::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #007bff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.enlace-subrayado:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+@keyframes caerDesdeArribaNuevo {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#botonCaida {
+  animation: caerDesdeArribaNuevo 0.5s ease-in-out 1s both;
+}
+
+#botonCocteles {
+  animation: caerDesdeArribaNuevo 0.5s ease-in-out 1s both;
+}
 
 @media (max-width: 990px) {
   .logo-image {
@@ -637,8 +696,8 @@ body.pagina6 {
   }
 
   #parpadeoImg {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     margin-top: 1em;
   }
 
@@ -673,7 +732,7 @@ body.pagina6 {
   .pausePlay {
     width: 2em;
     margin-left: 1em;
-    margin-top: 0.1em;
+    margin-top: -1.5em;
   }
 
   .volverCarta {
@@ -688,5 +747,30 @@ body.pagina6 {
   .card {
     margin-bottom: 1em;
     margin-top: 1em;
+  }
+
+  .text-mask {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .botonCarta,
+  .botonCocteles {
+    margin-top: 1em;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .botonCarta {
+    margin-top: 8.5em;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .boton-container {
+    display: none;
   }
 }

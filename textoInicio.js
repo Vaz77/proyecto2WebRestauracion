@@ -43,11 +43,18 @@ function fadeIn(element) {
   }, 20);
 }
 
-const botonCarta = document.getElementById("botonCarta");
-botonCarta.addEventListener("click", () => {
-  botonCarta.classList.toggle("neon-effect");
-});
-
 setTimeout(function () {
   fadeIn(botonCarta);
+}, 13000);
+
+setTimeout(function () {
+  const botonCaida = document.getElementById("botonCaida");
+  botonCaida.style.display = "block";
+  fadeIn(botonCaida);
 }, 14000);
+
+setTimeout(function () {
+  const botonCocteles = document.getElementById("botonCocteles");
+  botonCocteles.style.display = "block";
+  fadeIn(botonCocteles);
+}, 14500);
