@@ -34,7 +34,7 @@ body.pagina1 {
 }
 
 body.pagina2 {
-  background-image: url(../img/restaurante.jpg);
+  background-image: url(../img/fondoCoctel4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: fantasy;
@@ -46,6 +46,14 @@ body.pagina3 {
   background-size: cover;
   font-family: fantasy;
   height: 100vh;
+}
+
+.paginaCarta,
+.paginaBebidas {
+  background-image: url(../img/restaurante.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: fantasy;
 }
 
 .formSugerencias {
@@ -195,9 +203,10 @@ body.pagina6 {
   margin-bottom: 20px;
   padding: 15px;
   box-shadow: 0px 4px 6px rgb(255, 255, 255);
-  color: white;
+  color: #ffedcf;
   max-width: 35em;
   margin-top: 1em;
+  margin: auto;
 }
 
 .cardPrincipales {
@@ -208,9 +217,9 @@ body.pagina6 {
   padding: 15px;
   box-shadow: 0px 4px 6px rgb(255, 255, 255);
   transition: transform 0.3s ease-in-out;
-  color: white;
   max-width: 35em;
-  margin-top: 1em;
+  margin-top: 0em;
+  color: #ffedcf;
 }
 
 .cardPostres {
@@ -221,7 +230,7 @@ body.pagina6 {
   padding: 15px;
   box-shadow: 0px 4px 6px rgb(255, 255, 255);
   transition: transform 0.3s ease-in-out;
-  color: white;
+  color: #ffedcf;
   max-width: 35em;
   margin-top: 3.4em;
 }
@@ -533,6 +542,11 @@ body.pagina6 {
   margin-top: -50px;
 }
 
+.neon-boton:hover {
+  background-color: black;
+  color: rgb(255, 86, 210);
+}
+
 @keyframes neon {
   0% {
     box-shadow: 0 0 1.5px rgb(223, 0, 164), 0 0 3px rgb(223, 0, 164),
@@ -542,6 +556,47 @@ body.pagina6 {
     box-shadow: 0 0 1.5px rgb(34, 0, 255), 0 0 3px rgb(34, 0, 255),
       0 0 6px rgb(255, 255, 255), 0 0 12px rgb(34, 0, 255);
   }
+}
+
+.enlacesCarta {
+  text-decoration: none;
+  font-family: century "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  margin-bottom: 10px;
+  color: #ffedcf;
+}
+
+.iconoBebidas {
+  width: 3.5em;
+  margin-top: 5em;
+  display: block;
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
+
+.volverBebidas {
+  width: 4em;
+}
+
+.volverCarta {
+  width: 4em;
+  margin-top: -7em;
+}
+
+.textoBebidas {
+  margin-top: -1.5em;
+}
+
+.cartaCoctel {
+  text-shadow: 0 0 0px rgb(255, 0, 230);
+}
+
+.coctel {
+  text-shadow: 0 0 0px rgb(255, 255, 255);
+  width: 16em;
 }
 
 @media (max-width: 990px) {
@@ -592,5 +647,19 @@ body.pagina6 {
     width: 2em;
     margin-left: 1em;
     margin-top: 0.1em;
+  }
+
+  .volverCarta {
+    width: 4em;
+    margin-top: -2em;
+  }
+
+  .textoBebidas {
+    margin-top: 0.5em;
+  }
+
+  .card {
+    margin-bottom: 1em;
+    margin-top: 1em;
   }
 }
