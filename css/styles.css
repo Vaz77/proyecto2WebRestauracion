@@ -34,7 +34,7 @@ body.pagina1 {
 }
 
 body.pagina2 {
-  background-image: url(../img/fondoCoctel4.jpg);
+  background-image: url(../img/fondoCocteles.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: fantasy;
@@ -589,14 +589,24 @@ body.pagina6 {
 .textoBebidas {
   margin-top: -1.5em;
 }
-
-.cartaCoctel {
-  text-shadow: 0 0 0px rgb(255, 0, 230);
+.tituloCocteles {
+  color: rgb(255, 0, 230);
+  text-shadow: 0 0 15px white;
 }
-
 .coctel {
   text-shadow: 0 0 0px rgb(255, 255, 255);
   width: 16em;
+  height: 16em;
+  box-shadow: 0 0 15px wheat;
+  transition: transform 0.3s;
+}
+
+.textoCoctel {
+  margin-top: 1.3em;
+  text-shadow: 0 0 20px rgb(255, 0, 230);
+}
+.coctel:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 990px) {
