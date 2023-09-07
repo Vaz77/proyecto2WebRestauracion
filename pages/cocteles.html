@@ -109,6 +109,45 @@
         </div>
       </div>
     </nav>
+    <div class="carrito-info mt-3">
+      <img
+        src="../img/carrito.png"
+        alt="Carrito"
+        width="30"
+        height="30"
+        class="imgCarrito d-inline-block align-text-top rounded-circle ms-2"
+        data-bs-toggle="modal"
+        data-bs-target="#carrito-modal"
+      />
+      <span id="carrito-count" class="carrito-count">0</span>
+    </div>        
+    <div class="modal fade" id="carrito-modal" tabindex="-1" aria-labelledby="carrito-modal-label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-dark text-white">
+            <h5 class="modal-title" id="carrito-modal-label">Platos para pedir</h5>
+            <button type="button" class="btn-close text-white close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group">
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <div class="carrito-container">
+              <p class="modal-total-text">Total de platos en el carrito: <span id="carrito-modal-count">0</span></p>
+              <p class="total-carrito-modal" id="total-carrito">Total a pagar: 0.00 €</p>
+            </div>
+            <div id="realizar-pedido-btn-container">
+              <div id="exito-message" class="hidden ms-5 exito-message">¡Pedido realizado con éxito!</div>
+              <button id="realizar-pedido" class="neon-button ms-5">Realizar Pedido</button>
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</nav>
     <div class="container-fluid text-center mt-5">
       <h3 class="tituloCocteles text-center">NUESTROS COCTELES</h3>
       <div class="row mb-5">
@@ -126,7 +165,21 @@
                 Una deliciosa margarita con tequila, licor de naranja y jugo de
                 lima fresca. Servida en un vaso escarchado con sal.
               </p>
-              <p class="price">$9.99</p>
+              <p class="price">$9.99
+                <img
+                class="agregarBoton btn-icon btn-agregar"
+                src="../img/mas2.png"
+                alt="Agregar al carrito"
+                data-nombre="Margarita Fresca"
+                data-precio="9.99"
+              />
+              <img
+                class="eliminarBoton btn-icon btn-quitar"
+                src="../img/eliminar.png"
+                alt="Quitar del carrito"
+                data-nombre="Margarita Fresca"
+              />
+              </p>
               </div>
             </div>
             <div class="col-md-3 mt-5">
@@ -141,7 +194,21 @@
                 Una mezcla cremosa de ron, crema de coco y jugo de piña, servida
                 con hielo triturado y una rodaja de piña.
               </p>
-              <p class="price">$8.99</p>
+              <p class="price">$8.99
+                <img
+                class="agregarBoton btn-icon btn-agregar"
+                src="../img/mas2.png"
+                alt="Agregar al carrito"
+                data-nombre="Piña Colada Tropical"
+                data-precio="8.99"
+              />
+              <img
+                class="eliminarBoton btn-icon btn-quitar"
+                src="../img/eliminar.png"
+                alt="Quitar del carrito"
+                data-nombre="Piña Colada Tropical"
+              />
+              </p>
               </div>
             </div>
             <div class="col-md-3 mt-5">
@@ -156,7 +223,21 @@
                 Un cóctel refrescante con ron blanco, menta fresca, azúcar y
                 jugo de lima, coronado con soda y hielo.
               </p>
-              <p class="price">$10.49</p>
+              <p class="price">$10.49
+                <img
+                class="agregarBoton btn-icon btn-agregar"
+                src="../img/mas2.png"
+                alt="Agregar al carrito"
+                data-nombre="Mojito Refrescante"
+                data-precio="10.49"
+              />
+              <img
+                class="eliminarBoton btn-icon btn-quitar"
+                src="../img/eliminar.png"
+                alt="Quitar del carrito"
+                data-nombre="Mojito Refrescante"
+              />
+              </p>
               </div>
             </div>
             <div class="col-md-3 mt-5">
@@ -171,7 +252,21 @@
                 Un cóctel tropical con ron, licor de almendras, licor de naranja
                 y jugo de lima, decorado con una cereza y una rodaja de piña.
               </p>
-              <p class="price">$11.99</p>
+              <p class="price">$11.99
+                <img
+                class="agregarBoton btn-icon btn-agregar"
+                src="../img/mas2.png"
+                alt="Agregar al carrito"
+                data-nombre="Mai Tai"
+                data-precio="11.99"
+              />
+              <img
+                class="eliminarBoton btn-icon btn-quitar"
+                src="../img/eliminar.png"
+                alt="Quitar del carrito"
+                data-nombre="Mai Tai"
+              />
+              </p>
               </div>
             </div>
             <div class="col-md-3 mt-5">
@@ -186,7 +281,21 @@
                 Un cóctel refrescante de bourbon, azúcar y hojas de menta,
                 servido con hielo picado en una taza de plata.
               </p>
-              <p class="price">$11.99</p>
+              <p class="price">$11.99
+                <img
+                class="agregarBoton btn-icon btn-agregar"
+                src="../img/mas2.png"
+                alt="Agregar al carrito"
+                data-nombre="Mint Julep"
+                data-precio="11.99"
+              />
+              <img
+                class="eliminarBoton btn-icon btn-quitar"
+                src="../img/eliminar.png"
+                alt="Quitar del carrito"
+                data-nombre="Mint Julep"
+              />
+              </p>
               </div>
             </div>
             <div class="col-md-3 mt-5">
@@ -201,7 +310,21 @@
                 Una combinación clásica de ron, cola y jugo de limón, servida
                 con una rodaja de limón y hielo.
               </p>
-              <p class="price">$7.99</p>
+              <p class="price">$7.99
+                <img
+                class="agregarBoton btn-icon btn-agregar"
+                src="../img/mas2.png"
+                alt="Agregar al carrito"
+                data-nombre="Cuba Libre"
+                data-precio="7.99"
+              />
+              <img
+                class="eliminarBoton btn-icon btn-quitar"
+                src="../img/eliminar.png"
+                alt="Quitar del carrito"
+                data-nombre="Cuba Libre"
+              />
+              </p>
               </div>
             </div>
             <div class="col-md-3 mt-5">
@@ -217,7 +340,21 @@
                 naranja y jugo de arándano, servido con una cereza y una rodaja
                 de naranja.
               </p>
-              <p class="price">$10.99</p>
+              <p class="price">$10.99
+                <img
+                class="agregarBoton btn-icon btn-agregar"
+                src="../img/mas2.png"
+                alt="Agregar al carrito"
+                data-nombre="Sex on the Beach"
+                data-precio="10.99"
+              />
+              <img
+                class="eliminarBoton btn-icon btn-quitar"
+                src="../img/eliminar.png"
+                alt="Quitar del carrito"
+                data-nombre="Sex on the Beach"
+              />
+              </p>
               </div>
             </div>
             <div class="col-md-3 mt-5">
@@ -232,7 +369,21 @@
                 Un cóctel brasileño con cachaça, azúcar y lima, servido con
                 hielo picado.
               </p>
-              <p class="price">$8.49</p>
+              <p class="price">$8.49
+                <img
+                class="agregarBoton btn-icon btn-agregar"
+                src="../img/mas2.png"
+                alt="Agregar al carrito"
+                data-nombre="Caipirinha"
+                data-precio="8.49"
+              />
+              <img
+                class="eliminarBoton btn-icon btn-quitar"
+                src="../img/eliminar.png"
+                alt="Quitar del carrito"
+                data-nombre="Caipirinha"
+              />
+              </p>
               </div>
             </div>
             <div class="col-md-6 mt-4">
@@ -247,10 +398,24 @@
                 Un cóctel azul brillante con vodka, licor de curaçao y limonada,
                 servido con una rodaja de limón.
               </p>
-              <p class="price">$9.49</p>
+              <p class="price">$9.49
+                <img
+                class="agregarBoton btn-icon btn-agregar"
+                src="../img/mas2.png"
+                alt="Agregar al carrito"
+                data-nombre="Blue Lagoon"
+                data-precio="9.49"
+              />
+              <img
+                class="eliminarBoton btn-icon btn-quitar"
+                src="../img/eliminar.png"
+                alt="Quitar del carrito"
+                data-nombre="Blue Lagoon"
+              />
+              </p>
               </div>
             </div>
-            <div class="col-md-6 mt-5">
+            <div class="col-md-6 mt-4">
               <img
                 src="../img/10.jpg"
                 alt="Daiquiri de Fresa"
@@ -262,7 +427,21 @@
                 Un clásico daiquiri con ron, puré de fresa, azúcar y jugo de
                 limón. Perfecto para los amantes de las fresas.
               </p>
-              <p class="price">$9.99</p>
+              <p class="price">$9.99
+                <img
+                class="agregarBoton btn-icon btn-agregar"
+                src="../img/mas2.png"
+                alt="Agregar al carrito"
+                data-nombre="Daiquiri de Fresa"
+                data-precio="9.99"
+              />
+              <img
+                class="eliminarBoton btn-icon btn-quitar"
+                src="../img/eliminar.png"
+                alt="Quitar del carrito"
+                data-nombre="Daiquiri de Fresa"
+              />
+              </p>
               </div>
             </div>
           </div>
@@ -292,5 +471,6 @@
         </div>
       </nav>
     </div>
+    <script src="../carrito.js"></script>
   </body>
 </html>
